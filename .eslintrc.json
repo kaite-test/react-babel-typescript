@@ -1,0 +1,41 @@
+{
+  "plugins": ["react-hooks"],
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+    // "plugin:import/errors",
+    // "plugin:import/warnings",
+    // "plugin:import/typescript"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
